@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B90E1"
+    tools:context=".HalamanLogin">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/logo"
+        android:paddingLeft="30dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-89dp" />
+
+    <TextView
+        android:id="@+id/loginT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/input_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#B1D7EC"
+        android:text="Login"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="569dp" />
+
+    <EditText
+        android:id="@+id/input_user"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/loginT"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="30dp"
+        android:background="#F4F4F4"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:background="#F4F4F4"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/input_user"
+        android:layout_marginEnd="35dp"/>
+</RelativeLayout>

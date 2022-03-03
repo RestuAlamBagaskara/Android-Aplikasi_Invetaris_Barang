@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B90E1"
+    tools:context=".DetailList">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:id="@+id/image_detail"
+            android:layout_marginBottom="30sp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="190sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_detail"
+            android:layout_marginLeft="10sp"
+            android:textSize="20sp"
+            android:text="Nama Barang : "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/text_detail_nama">
+        </TextView>
+        <TextView
+            android:layout_width="190sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_detail"
+            android:layout_toEndOf="@id/text_detail_nama"
+            android:textSize="20sp"
+            android:text="Jumlah Barang : "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/text_detail_jumlah">
+        </TextView>
+
+        <TextView
+            android:layout_width="190sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_detail_nama"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:text="Nama"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/detail_nama">
+        </TextView>
+        <TextView
+            android:layout_width="190sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_detail_nama"
+            android:layout_toEndOf="@id/text_detail_nama"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:text="Jumlah "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/detail_jumlah">
+        </TextView>
+
+        <TextView
+            android:layout_width="190sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_nama"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:text="Harga Beli : "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/text_detail_beli">
+        </TextView>
+        <TextView
+            android:layout_width="190sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_jumlah"
+            android:layout_toEndOf="@id/text_detail_nama"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:text="Harga Jual : "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/text_detail_jual">
+        </TextView>
+
+        <TextView
+            android:id="@+id/detail_beli"
+            android:layout_width="190sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_detail_beli"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="Beli"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"></TextView>
+        <TextView
+            android:layout_width="190sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_detail_jual"
+            android:layout_toEndOf="@id/text_detail_nama"
+            android:layout_marginTop="10sp"
+            android:textSize="20sp"
+            android:text="Jual"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/detail_jual">
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="10sp"
+            android:layout_below="@id/detail_beli"
+            android:textSize="20sp"
+            android:text="Deskripsi"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/detail_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:layout_below="@id/text_deskripsi"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:background="@color/transparent_white"
+            android:textColor="@color/white"></TextView>
+
+        <Button
+            android:id="@+id/edit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_below="@id/detail_deskripsi"
+            android:backgroundTint="@color/blue">
+        </Button>
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hapus"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_below="@+id/edit_button"
+            android:backgroundTint="#E30000">
+        </Button>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview"
+    android:layout_gravity="center"
+    android:layout_marginTop="4sp"
+    android:layout_marginBottom="4sp"
+    android:layout_marginLeft="8sp"
+    android:layout_marginRight="8sp"
+    card_view:cardCornerRadius="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130sp"
+        android:padding="10sp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/image_barang"
+            android:scaleType="fitXY"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/photo_avatar">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_barang"
+            android:id="@+id/text_nama_barang"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Nama Barang : ">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image_barang"
+            android:layout_below="@+id/text_nama_barang"
+            android:id="@+id/nama_barang"
+            android:layout_marginBottom="5sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Nama">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_barang"
+            android:layout_below="@+id/nama_barang"
+            android:id="@+id/text_jumlah_barang"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Jumlah Barang : ">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/image_barang"
+            android:layout_below="@+id/text_jumlah_barang"
+            android:id="@+id/jumlah_barang"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Jumlah">
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

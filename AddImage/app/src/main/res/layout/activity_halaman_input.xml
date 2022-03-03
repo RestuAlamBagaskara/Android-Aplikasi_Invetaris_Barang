@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HalamanInput">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_tambah_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Barang"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_tambah_barang"
+            android:id="@+id/input_nama">
+        </EditText>
+        <TextView
+            android:id="@+id/text_jumlah_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_nama"
+            android:text="Jumlah Barang"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/text_jumlah_barang"
+            android:id="@+id/input_jumlah">
+        </EditText>
+        <TextView
+            android:id="@+id/text_beli_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_jumlah"
+            android:text="Harga Beli"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/text_beli_barang"
+            android:id="@+id/input_beli">
+        </EditText>
+        <TextView
+            android:id="@+id/text_jual_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_beli"
+            android:text="Harga Jual"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_below="@+id/text_jual_barang"
+            android:id="@+id/input_jual">
+        </EditText>
+        <TextView
+            android:id="@+id/text_deskripsi_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_jual"
+            android:text="Deskripsi"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp">
+        </TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:layout_below="@+id/text_deskripsi_barang"
+            android:id="@+id/input_deskripsi">
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_gambar_barang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_deskripsi"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="20sp"
+            android:text="Gambar"></TextView>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/preview"
+            android:layout_below="@+id/text_gambar_barang">
+        </ImageView>
+
+        <Button
+            android:id="@+id/input_gambar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/preview"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20sp"
+            android:backgroundTint="#4B90E1"
+            android:text="Pilih Gambar"
+            android:textColor="@color/white"></Button>
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/input_gambar"
+            android:text="Tambah"
+            android:backgroundTint="@color/blue"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"></Button>
+    </RelativeLayout>
+</ScrollView>
